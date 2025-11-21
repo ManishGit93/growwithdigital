@@ -126,7 +126,6 @@ function CalendlyIcon() {
     </svg>
   );
 }
-
 export default function Footer() {
   return (
     <footer className="bg-[#f6f1eb] text-gray-800 border-t border-gray-300">
