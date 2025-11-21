@@ -154,7 +154,6 @@ export default function Footer() {
               Launch it
             </Link>
           </div>
-
           <div className="space-y-4">
             <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#f1b3a3] text-[#cc7c6b]">
               <ConnectIcon />
@@ -194,7 +193,6 @@ export default function Footer() {
             </a>
           </div>
         </div>
-
         {/* Divider + bottom text */}
         <div className="space-y-6 pt-4">
           <div className="h-px w-full bg-gray-300" />
