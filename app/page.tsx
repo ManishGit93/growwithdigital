@@ -9,8 +9,9 @@ import Testimonials from "@/components/sections/home/Testimonials";
 import CTASection from "@/components/sections/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Home - Studio",
-  description: "We design and build digital products. A creative studio focused on crafting meaningful digital experiences.",
+  title: "GrowWithDigital | Websites that rank. SEO that brings real leads.",
+  description:
+    "GrowWithDigital builds fast, modern websites and combines them with proven SEO strategies so your business can be discovered, trusted, and chosen online.",
 };
 
 export default function Home() {

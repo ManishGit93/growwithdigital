@@ -19,7 +19,7 @@ export default function Testimonials() {
               transition={{ duration: 0.6 }}
               className="text-xs uppercase tracking-[0.35em] text-gray-500"
             >
-              Happy clients
+              Testimonials
             </motion.span>
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900"
             >
-              “We consider this studio an essential partner for years to come.”
+              What our clients say
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -37,18 +37,9 @@ export default function Testimonials() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg text-gray-600"
             >
-              Buffalo surfaces testimonials as editorial pull quotes. We’re doing the same:
-              a carousel of the quotes clients repeat the most, framed with italics, bold names,
-              and neat dividers to keep the cadence calm and confident.
+              A few words from clients we&apos;ve worked with on websites, SEO, and ongoing
+              support. Real projects, clear communication, and a focus on results.
             </motion.p>
-
-            <Button
-              href="/contact"
-              variant="outline"
-              className="mt-6 w-full sm:w-auto border-gray-300 text-gray-900 hover:bg-gray-900 hover:text-white"
-            >
-              Launch proposal planner
-            </Button>
           </div>
 
           <div className="space-y-6">

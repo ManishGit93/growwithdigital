@@ -21,7 +21,7 @@ export default function Hero() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gray-600"
           >
-            Studio / Brighton · Remote worldwide
+            GrowWithDigital / India · Remote worldwide
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -29,8 +29,7 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-gray-900"
           >
-            We build brands and beautifully opinionated websites for teams that
-            need to look their very best.
+            Websites that rank. SEO that brings real leads.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -38,9 +37,9 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="text-lg sm:text-xl text-gray-600 max-w-2xl"
           >
-            From first sketch to shipped product we pair design, copy, and code
-            into one deliberate process. Based in the UK, collaborating with founders
-            and marketing teams everywhere.
+            GrowWithDigital builds fast, modern websites and combines them with
+            proven SEO strategies so your business can be discovered, trusted,
+            and chosen online.
           </motion.p>
 
           <motion.div
@@ -50,22 +49,28 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
             <Button href="/contact" variant="primary" className="text-base">
-              Launch a project
+              Get a Free Strategy Call
             </Button>
             <Button
               href="/work"
               variant="ghost"
               className="border border-gray-300 bg-white/60 hover:bg-white text-gray-900"
             >
-              Browse the work
+              View Our Work
             </Button>
           </motion.div>
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 border-t border-gray-300/60 pt-10">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
-            A few numbers we care about
-          </p>
+          <div className="space-y-2">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+              GrowWithDigital
+            </p>
+            <p className="text-sm text-gray-600">
+              No spam. No sales pressure. Just honest, practical advice for your
+              business.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full md:max-w-3xl">
             {heroStats.map((stat) => (
               <div key={stat.id} className="space-y-1">

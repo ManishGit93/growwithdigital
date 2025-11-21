@@ -8,31 +8,24 @@ export interface Offering {
 export const offerings: Offering[] = [
   {
     id: "offering-1",
-    title: "Brand Strategy & Identity",
+    title: "Website Development",
     summary:
-      "Research-backed positioning, naming, messaging, and visual systems that set the tone for your next chapter.",
-    cta: "Explore brand work",
+      "Conversion-focused websites using modern technologies like Next.js, React and WordPress. Every site is responsive, fast, and built to support your growth.",
+    cta: "Learn about web development",
   },
   {
     id: "offering-2",
-    title: "Campaigns & Content",
+    title: "SEO Services",
     summary:
-      "Always-on content engines, hero launches, and editorial operations that keep audiences inspired every week.",
-    cta: "See how we launch",
+      "On-page, technical and local SEO so your website shows up on Google when your ideal customers are searching.",
+    cta: "Explore SEO services",
   },
   {
     id: "offering-3",
-    title: "Digital Experiences",
+    title: "Maintenance & Support",
     summary:
-      "Websites, landing pages, and product surfaces engineered for conversion, credibility, and effortless UX.",
-    cta: "View experiences",
-  },
-  {
-    id: "offering-4",
-    title: "Growth Partnerships",
-    summary:
-      "Fractional growth teams embedded with you to own paid media, lifecycle, analytics, and revenue experiments.",
-    cta: "Scale with us",
+      "Ongoing updates, backups, fixes and performance checks so your website never feels stuck or outdated.",
+    cta: "View maintenance plans",
   },
 ];
 

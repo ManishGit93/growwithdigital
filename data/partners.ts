@@ -4,10 +4,14 @@ export const partners = [
   "Vertex AI",
   "Column Inches",
   "Zenith Capital",
-  "Brightside",
+  "Brightside Studio",
   "Lumen Health",
   "Canam Limo",
   "Websters",
   "Fluxwear",
+  "Mint Memory Clinic",
+  "Boxfusion",
+  "Domus",
+  "London Undercover",
 ];
 

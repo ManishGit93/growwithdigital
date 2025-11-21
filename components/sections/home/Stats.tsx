@@ -7,45 +7,47 @@ export default function Stats() {
   return (
     <section className="py-20 sm:py-28 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-[1.1fr_1.3fr] items-center mb-12">
-          <div className="space-y-4">
-            <p className="text-xs uppercase tracking-[0.35em] text-gray-500">
-              A few stats
-            </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
-              Numbers from partners who trusted us with their next chapter.
-            </h2>
-          </div>
-          <p className="text-base sm:text-lg text-gray-600">
-            We stay small on purpose so we can obsess over the details. The metrics
-            we monitor most are the ones clients feel the day after launch—momentum,
-            confidence, and conversion.
+        <div className="text-center mb-12">
+          <p className="text-xs uppercase tracking-[0.35em] text-gray-500 mb-3">
+            Results
           </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">
+            The kind of results we aim for
+          </h2>
         </div>
 
-        <div className="rounded-3xl border border-gray-200/70 bg-[#fdfaf5] px-6 sm:px-10 py-10">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col items-center gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.id}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="space-y-2"
+                className="flex flex-col items-center text-center space-y-4"
               >
                 <motion.div
-                  whileHover={{ x: 6 }}
-                  className="text-3xl sm:text-4xl font-semibold text-gray-900"
+                  className="relative flex items-center justify-center w-40 h-40 rounded-full bg-gray-100 shadow-sm"
+                  style={{
+                    // animate CSS custom property --progress from 0 to target
+                    // and use it to drive the conic-gradient fill
+                    background:
+                      "conic-gradient(#14b8a6 0deg calc(var(--progress) * 3.6deg), #e5e7eb calc(var(--progress) * 3.6deg) 360deg)",
+                  }}
+                  initial={{ "--progress": 0 } as any}
+                  whileInView={{ "--progress": stat.progress ?? 100 } as any}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1.1, delay: index * 0.1, ease: "easeOut" }}
                 >
-                  {stat.value}
+                  <div className="flex items-center justify-center w-36 h-36 rounded-full bg-white">
+                    <span className="text-3xl font-semibold text-gray-900">
+                      {stat.value}
+                    </span>
+                  </div>
                 </motion.div>
-                <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                <p className="text-xs tracking-[0.25em] text-gray-600 uppercase max-w-[11rem]">
                   {stat.label}
-                </p>
-                <div className="h-px bg-gray-200/80" />
-                <p className="text-sm text-gray-600">
-                  {stat.description ?? "Consistently delivered across recent collaborations."}
                 </p>
               </motion.div>
             ))}

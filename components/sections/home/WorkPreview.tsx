@@ -22,10 +22,11 @@ export default function WorkPreview() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Selected Work
+            Some types of projects we love
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A glimpse into the projects we&apos;re proud to have created.
+            A few examples of the kinds of websites and landing pages we enjoy
+            designing, building and optimising.
           </p>
         </motion.div>
 

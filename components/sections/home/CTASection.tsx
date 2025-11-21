@@ -21,25 +21,25 @@ export default function CTASection() {
           <div className="relative z-10 grid gap-10 md:grid-cols-[1.4fr_1fr] items-center">
             <div className="space-y-6">
               <p className="text-xs uppercase tracking-[0.35em] text-gray-500">
-                Project planner
+                Final step
               </p>
               <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
-                Interested in working with us? Launch our proposal planner to get started.
+                Ready to bring your business online the right way?
               </h2>
               <p className="text-base text-gray-600 max-w-xl">
-                Tell us about your brand, timelines, and ambitions. We’ll follow up with
-                a tailored plan within a couple of days—no hard sell, just clarity.
+                Share a few details about your business and we&apos;ll suggest the best
+                website and SEO plan for you — no obligation.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button href="/contact" variant="primary">
-                  Launch planner
+                  Get a Free Consultation
                 </Button>
                 <Button
                   href="/work"
                   variant="ghost"
                   className="border border-gray-300 bg-white/70 hover:bg-white text-gray-900"
                 >
-                  See recent launches
+                  View Our Work
                 </Button>
               </div>
             </div>

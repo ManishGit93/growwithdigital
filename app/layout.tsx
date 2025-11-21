@@ -15,11 +15,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Studio - We design and build digital products",
-  description: "A creative studio focused on crafting meaningful digital experiences. From strategy to launch, we help brands connect with their audiences.",
+  title: "GrowWithDigital – Website Development & SEO Agency",
+  description:
+    "GrowWithDigital is a website development and SEO agency helping small businesses and startups build fast, modern, and search-ready websites that actually bring leads. Based in India and working remotely with clients across the world.",
   openGraph: {
-    title: "Studio - We design and build digital products",
-    description: "A creative studio focused on crafting meaningful digital experiences.",
+    title: "GrowWithDigital – Website Development & SEO Agency",
+    description:
+      "Fast, modern, and search-ready websites that actually bring leads. Based in India, working with clients worldwide.",
     type: "website",
   },
 };

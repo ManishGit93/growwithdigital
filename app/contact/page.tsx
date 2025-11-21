@@ -89,12 +89,11 @@ export default function ContactPage() {
               Contact
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Get in Touch
+              Tell us about your project
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Have a project in mind? We&apos;d love to hear from you. Fill out the
-              form below or reach out directly, and we&apos;ll get back to you as
-              soon as possible.
+              Share a few details and we&apos;ll get back to you with suggestions,
+              timelines, and an approximate cost — no hard selling, no pressure.
             </p>
           </motion.div>
 
@@ -247,42 +246,29 @@ export default function ContactPage() {
               <div className="lg:col-span-1">
                 <div className="bg-gray-50 rounded-lg p-6 border border-gray-100">
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                    Contact Information
+                    Contact details
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-4 text-sm text-gray-700">
                     <div>
-                      <h4 className="text-sm font-medium text-gray-900 mb-1">
-                        Email
-                      </h4>
+                      <h4 className="font-medium text-gray-900 mb-1">Email</h4>
                       <a
-                        href="mailto:hello@studio.com"
-                        className="text-sm text-gray-600 hover:text-gray-900"
+                        href="mailto:hello@growwithdigital.com"
+                        className="hover:text-gray-900"
                       >
-                        hello@studio.com
+                        hello@growwithdigital.com
                       </a>
                     </div>
                     <div>
-                      <h4 className="text-sm font-medium text-gray-900 mb-1">
-                        Social
+                      <h4 className="font-medium text-gray-900 mb-1">
+                        WhatsApp
                       </h4>
-                      <div className="space-y-1">
-                        <a
-                          href="https://twitter.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-sm text-gray-600 hover:text-gray-900"
-                        >
-                          Twitter
-                        </a>
-                        <a
-                          href="https://linkedin.com"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-sm text-gray-600 hover:text-gray-900"
-                        >
-                          LinkedIn
-                        </a>
-                      </div>
+                      <p>+91-XXXXXXXXXX</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">
+                        Location
+                      </h4>
+                      <p>India – working remotely with clients worldwide</p>
                     </div>
                   </div>
                 </div>

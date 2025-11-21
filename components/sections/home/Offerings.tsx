@@ -10,15 +10,19 @@ export default function Offerings() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-gray-500 mb-3">
-              Offerings
+              Services
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Plug-in services designed to move fast.
+              What we do at GrowWithDigital
             </h2>
+            <p className="mt-3 text-gray-600">
+              One partner for your website, SEO, and ongoing support.
+            </p>
           </div>
           <p className="text-gray-600 max-w-xl">
-            Launch net-new brands, reboot web experiences, or scale performance
-            programs with pods that integrate into your existing workflows.
+            From first build to ongoing optimisation, we help you move from
+            “just having a website” to a digital presence that actually brings
+            enquiries and sales.
           </p>
         </div>
 

@@ -49,5 +49,7 @@ export interface Stat {
   value: string;
   label: string;
   description?: string;
+  /** Optional numeric value (0–100) for visual progress rings */
+  progress?: number;
 }
 
