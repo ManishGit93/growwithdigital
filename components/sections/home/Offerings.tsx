@@ -5,9 +5,9 @@ import { offerings } from "@/data/offerings";
 
 export default function Offerings() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#f6f1eb]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
           <div>
             <p className="text-sm uppercase tracking-[0.35em] text-gray-500 mb-3">
               Services

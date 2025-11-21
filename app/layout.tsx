@@ -33,7 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-[#f6f1eb]`}
+      >
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />

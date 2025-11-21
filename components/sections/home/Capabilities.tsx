@@ -2,7 +2,7 @@
 
 export default function Capabilities() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#f6f1eb]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-[1.2fr_1.4fr] items-start mb-12">
           <p className="text-sm uppercase tracking-[0.35em] text-gray-500 mb-3">

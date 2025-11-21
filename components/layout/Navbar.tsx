@@ -39,19 +39,16 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-6">
           {/* Logo */}
           <Link href="/" className="flex flex-col group">
             <motion.span
               whileHover={{ x: 2 }}
-              className="text-xl font-semibold tracking-[0.38em] uppercase text-gray-900"
+              className="text-xl font-semibold tracking-[0.25em] uppercase text-gray-900"
             >
-              Studio
+              Grow With Digital
             </motion.span>
-            <span className="text-[10px] uppercase tracking-[0.4em] text-gray-500">
-              Brighton · Remote
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -66,63 +63,26 @@ export default function Navbar() {
                     transition={{ delay: index * 0.05 }}
                     className="relative px-4 py-2"
                   >
+                    {isActive && (
+                      <motion.div
+                        layoutId="activeTab"
+                        className="absolute inset-0 rounded-full bg-gray-200/80"
+                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                      />
+                    )}
                     <span
                       className={`text-xs tracking-[0.35em] uppercase transition-colors relative z-10 ${
-                        isActive ? "text-gray-900" : "text-gray-600 hover:text-gray-900"
+                        isActive
+                          ? "text-red-600"
+                          : "text-gray-900 hover:text-sky-400"
                       }`}
                     >
                       {link.label}
                     </span>
-                    {isActive && (
-                      <motion.div
-                        layoutId="activeTab"
-                        className="absolute inset-0 bg-gray-200/80 rounded-full"
-                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                      />
-                    )}
                   </motion.div>
                 </Link>
               );
             })}
-          </div>
-
-          {/* Actions */}
-          <div className="flex items-center gap-3">
-            <Button
-              href="/contact"
-              variant="outline"
-              className="hidden md:inline-flex border-gray-300 bg-white/70 text-gray-900 hover:bg-gray-900 hover:text-white"
-            >
-              Launch planner
-            </Button>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              <motion.div
-                animate={{ rotate: isMenuOpen ? 180 : 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {isMenuOpen ? (
-                    <path d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </motion.div>
-            </button>
           </div>
         </div>
 
@@ -150,8 +110,8 @@ export default function Navbar() {
                       onClick={() => setIsMenuOpen(false)}
                       className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                         isActive
-                          ? "text-gray-900 bg-gray-100"
-                          : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                          ? "text-red-600 bg-gray-100"
+                          : "text-gray-900 hover:text-sky-400 hover:bg-gray-50"
                       }`}
                     >
                       {link.label}

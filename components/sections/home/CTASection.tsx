@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 
 export default function CTASection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#f6f1eb]">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

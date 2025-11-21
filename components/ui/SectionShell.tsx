@@ -20,7 +20,7 @@ interface SectionShellProps {
 export default function SectionShell({
   children,
   className = "",
-  maxWidth = "7xl",
+  maxWidth = "6xl",
 }: SectionShellProps) {
   const maxWidthClasses: Record<
     NonNullable<SectionShellProps["maxWidth"]>,
@@ -39,7 +39,7 @@ export default function SectionShell({
     full: "max-w-full",
   };
 
-  const maxWidthClass = maxWidthClasses[maxWidth] ?? maxWidthClasses["7xl"];
+  const maxWidthClass = maxWidthClasses[maxWidth] ?? maxWidthClasses["6xl"];
 
   return (
     <section className={`w-full ${className}`}>

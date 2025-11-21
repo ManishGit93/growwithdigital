@@ -5,7 +5,7 @@ import { stats } from "@/data/stats";
 
 export default function Stats() {
   return (
-    <section className="py-20 sm:py-28 bg-white">
+    <section className="py-20 sm:py-28 bg-[#f6f1eb]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-xs uppercase tracking-[0.35em] text-gray-500 mb-3">

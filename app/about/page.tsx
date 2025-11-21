@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#f6f1eb]">
       {/* Hero Section */}
-      <section className="py-16 sm:py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             About GrowWithDigital
           </h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
 
       {/* Mission & Values */}
       <section className="py-16 sm:py-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Our mission
@@ -43,7 +43,7 @@ export default function AboutPage() {
             <h3 className="text-2xl font-semibold text-gray-900 mb-4">
               What we care about
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   title: "Clarity",
@@ -78,8 +78,8 @@ export default function AboutPage() {
       </section>
 
       {/* Who we work with */}
-      <section className="py-16 sm:py-24 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <section className="py-16 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Who we&apos;re a good fit for
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
       {/* Mini Team */}
       <section className="py-16 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Who you&apos;ll work with
           </h2>

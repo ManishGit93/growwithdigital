@@ -8,7 +8,7 @@ import { feedPosts } from '@/data/feed';
 
 export default function FeedPage() {
   return (
-    <SectionShell className="py-20 bg-white" maxWidth="6xl">
+    <SectionShell className="py-20 bg-[#f6f1eb]" maxWidth="6xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
