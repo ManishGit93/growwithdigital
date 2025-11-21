@@ -21,20 +21,20 @@ export default function WorkPage() {
     );
 
   return (
-    <SectionShell className="py-24 bg-white dark:bg-gray-900" maxWidth="7xl">
+    <SectionShell className="py-24 bg-white" maxWidth="7xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         <div className="text-center mb-12">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400 mb-3">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-3">
             Selected projects
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
             Our Work
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             A collection of projects we&apos;re proud to have worked on with amazing clients.
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function WorkPage() {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 selectedCategory === category
-                  ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900 shadow-lg shadow-gray-900/10 dark:shadow-white/10'
-                  : 'bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+                  ? 'bg-gray-900 text-white shadow-lg shadow-gray-900/10'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
               {category}
@@ -71,7 +71,7 @@ export default function WorkPage() {
         </div>
 
         {filteredProjects.length === 0 && (
-          <div className="text-center py-12 text-gray-500 dark:text-gray-400">
+          <div className="text-center py-12 text-gray-500">
             No projects found in this category.
           </div>
         )}

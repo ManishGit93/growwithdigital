@@ -76,7 +76,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white">
       <section className="py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -85,13 +85,13 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400 mb-3">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-3">
               Contact
             </p>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
               Get in Touch
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Have a project in mind? We&apos;d love to hear from you. Fill out the
               form below or reach out directly, and we&apos;ll get back to you as
               soon as possible.
@@ -102,13 +102,13 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-900 rounded-lg p-8 text-center"
+              className="bg-green-50 border border-green-200 rounded-lg p-8 text-center"
             >
-              <div className="text-green-600 dark:text-green-400 text-5xl mb-4">✓</div>
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+              <div className="text-green-600 text-5xl mb-4">✓</div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">
                 Thank you!
               </h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-gray-600 mb-6">
                   We&apos;ve received your message and will get back to you within 24
                 hours.
               </p>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-gray-900 dark:text-white mb-2"
+                      className="block text-sm font-medium text-gray-900 mb-2"
                     >
                       Name <span className="text-red-500">*</span>
                     </label>
@@ -136,8 +136,8 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white bg-white dark:bg-gray-900 text-gray-900 dark:text-white ${
-                        errors.name ? "border-red-500" : "border-gray-300 dark:border-gray-700"
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white text-gray-900 ${
+                        errors.name ? "border-red-500" : "border-gray-300"
                       }`}
                       required
                     />
@@ -149,7 +149,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-gray-900 dark:text-white mb-2"
+                      className="block text-sm font-medium text-gray-900 mb-2"
                     >
                       Email <span className="text-red-500">*</span>
                     </label>
@@ -159,8 +159,8 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white bg-white dark:bg-gray-900 text-gray-900 dark:text-white ${
-                        errors.email ? "border-red-500" : "border-gray-300 dark:border-gray-700"
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white text-gray-900 ${
+                        errors.email ? "border-red-500" : "border-gray-300"
                       }`}
                       required
                     />
@@ -172,7 +172,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="company"
-                      className="block text-sm font-medium text-gray-900 dark:text-white mb-2"
+                      className="block text-sm font-medium text-gray-900 mb-2"
                     >
                       Company
                     </label>
@@ -182,14 +182,14 @@ export default function ContactPage() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white text-gray-900"
                     />
                   </div>
 
                   <div>
                     <label
                       htmlFor="budget"
-                      className="block text-sm font-medium text-gray-900 dark:text-white mb-2"
+                      className="block text-sm font-medium text-gray-900 mb-2"
                     >
                       Budget
                     </label>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white text-gray-900"
                     >
                       <option value="">Select a range</option>
                       <option value="under-25k">Under $25,000</option>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="details"
-                      className="block text-sm font-medium text-gray-900 dark:text-white mb-2"
+                      className="block text-sm font-medium text-gray-900 mb-2"
                     >
                       Project Details <span className="text-red-500">*</span>
                     </label>
@@ -222,8 +222,8 @@ export default function ContactPage() {
                       value={formData.details}
                       onChange={handleChange}
                       rows={6}
-                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white bg-white dark:bg-gray-900 text-gray-900 dark:text-white ${
-                        errors.details ? "border-red-500" : "border-gray-300 dark:border-gray-700"
+                      className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white text-gray-900 ${
+                        errors.details ? "border-red-500" : "border-gray-300"
                       }`}
                       required
                     />
@@ -245,24 +245,24 @@ export default function ContactPage() {
               </div>
 
               <div className="lg:col-span-1">
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-100 dark:border-gray-700">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                <div className="bg-gray-50 rounded-lg p-6 border border-gray-100">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4">
                     Contact Information
                   </h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-1">
+                      <h4 className="text-sm font-medium text-gray-900 mb-1">
                         Email
                       </h4>
                       <a
                         href="mailto:hello@studio.com"
-                        className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                        className="text-sm text-gray-600 hover:text-gray-900"
                       >
                         hello@studio.com
                       </a>
                     </div>
                     <div>
-                      <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-1">
+                      <h4 className="text-sm font-medium text-gray-900 mb-1">
                         Social
                       </h4>
                       <div className="space-y-1">
@@ -270,7 +270,7 @@ export default function ContactPage() {
                           href="https://twitter.com"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                          className="block text-sm text-gray-600 hover:text-gray-900"
                         >
                           Twitter
                         </a>
@@ -278,7 +278,7 @@ export default function ContactPage() {
                           href="https://linkedin.com"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                          className="block text-sm text-gray-600 hover:text-gray-900"
                         >
                           LinkedIn
                         </a>

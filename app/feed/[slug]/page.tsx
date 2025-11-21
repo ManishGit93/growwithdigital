@@ -45,12 +45,12 @@ export default async function FeedPostPage({ params }: FeedPostPageProps) {
   });
 
   return (
-    <SectionShell className="py-16 bg-white dark:bg-gray-900" maxWidth="4xl">
-      <article className="max-w-3xl mx-auto text-gray-900 dark:text-white">
+    <SectionShell className="py-16 bg-white" maxWidth="4xl">
+      <article className="max-w-3xl mx-auto text-gray-900">
         {/* Back Link */}
         <Link
           href="/feed"
-          className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white mb-8 transition-colors"
+          className="inline-flex items-center text-gray-600 hover:text-black mb-8 transition-colors"
         >
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -60,13 +60,13 @@ export default async function FeedPostPage({ params }: FeedPostPageProps) {
 
         {/* Post Header */}
         <div className="mb-8">
-          <div className="text-gray-500 dark:text-gray-400 mb-3">{formattedDate}</div>
+          <div className="text-gray-500 mb-3">{formattedDate}</div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{post.title}</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">{post.excerpt}</p>
+          <p className="text-xl text-gray-600">{post.excerpt}</p>
         </div>
 
         {/* Post Content */}
-        <div className="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-200">
+        <div className="prose prose-lg max-w-none text-gray-700">
           <div
             className="leading-relaxed whitespace-pre-line"
             dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
@@ -74,7 +74,7 @@ export default async function FeedPostPage({ params }: FeedPostPageProps) {
         </div>
 
         {/* Footer */}
-        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+        <div className="mt-12 pt-8 border-t border-gray-200">
           <Link
             href="/feed"
             className="text-lg font-medium hover:underline"

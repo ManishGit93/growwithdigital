@@ -4,155 +4,85 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { stats } from "@/data/stats";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  },
-};
-
 export default function Hero() {
   const heroStats = stats.slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-white dark:bg-gray-900">
-      <motion.div
-        className="absolute inset-0 opacity-40 dark:opacity-30"
-        animate={{
-          background: [
-            "radial-gradient(circle at 20% 30%, rgba(59,130,246,0.15), transparent 60%)",
-            "radial-gradient(circle at 80% 70%, rgba(236,72,153,0.15), transparent 60%)",
-          ],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      />
+    <section className="relative isolate overflow-hidden bg-[#f6f1eb]">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-white pointer-events-none" />
+      <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-[#fbce83]/40 blur-3xl" />
+      <div className="absolute -right-10 bottom-10 h-72 w-72 rounded-full bg-rose-200/40 blur-3xl" />
 
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-40 grid lg:grid-cols-2 gap-16 items-center"
-      >
-        <div className="space-y-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-32 flex flex-col gap-16">
+        <div className="space-y-8 max-w-4xl">
           <motion.span
-            variants={itemVariants}
-            className="inline-flex items-center text-sm uppercase tracking-[0.35em] text-gray-500 dark:text-gray-400"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gray-600"
           >
-            Creativity Driven
+            Studio / Brighton · Remote worldwide
           </motion.span>
           <motion.h1
-            variants={itemVariants}
-            className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-gray-900"
           >
-            We turn ambitious brands into category leaders.
+            We build brands and beautifully opinionated websites for teams that
+            need to look their very best.
           </motion.h1>
           <motion.p
-            variants={itemVariants}
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="text-lg sm:text-xl text-gray-600 max-w-2xl"
           >
-            Strategy, creative, and growth embedded with your team. We deliver
-            bold narratives, high-performing digital experiences, and campaigns
-            that actually move metrics.
+            From first sketch to shipped product we pair design, copy, and code
+            into one deliberate process. Based in the UK, collaborating with founders
+            and marketing teams everywhere.
           </motion.p>
 
           <motion.div
-            variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.7 }}
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
-            <Button href="/contact" variant="primary">
-              Start a project
+            <Button href="/contact" variant="primary" className="text-base">
+              Launch a project
             </Button>
-            <Button href="/work" variant="outline">
-              View our work
+            <Button
+              href="/work"
+              variant="ghost"
+              className="border border-gray-300 bg-white/60 hover:bg-white text-gray-900"
+            >
+              Browse the work
             </Button>
           </motion.div>
+        </div>
 
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200 dark:border-gray-800"
-          >
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8 border-t border-gray-300/60 pt-10">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-500">
+            A few numbers we care about
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full md:max-w-3xl">
             {heroStats.map((stat) => (
               <div key={stat.id} className="space-y-1">
                 <motion.div
-                  className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white"
+                  className="text-3xl sm:text-4xl font-semibold text-gray-900"
                   whileHover={{ scale: 1.05 }}
                 >
                   {stat.value}
                 </motion.div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-gray-600">
                   {stat.label}
                 </p>
               </div>
             ))}
-          </motion.div>
-        </div>
-
-        <motion.div
-          variants={itemVariants}
-          className="relative rounded-3xl bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-gray-800 dark:to-gray-900 text-white p-10 shadow-2xl overflow-hidden"
-        >
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.5),transparent_60%)]" />
-          <div className="relative space-y-6">
-            <p className="text-sm uppercase tracking-[0.4em] text-gray-400">
-              Studio Snapshot
-            </p>
-            <h3 className="text-2xl font-semibold">
-              Turning performance, product, and brand into one continuous story.
-            </h3>
-            <p className="text-gray-300">
-              Embedded teams driving product-market fit, go-to-market, and
-              evergreen growth. We deploy pods across brand, product, and
-              revenue so everything feels connected.
-            </p>
-            <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
-              <div>
-                <p className="text-sm uppercase tracking-wide text-gray-400">
-                  Operating model
-                </p>
-                <p className="font-semibold">Fractional + Embedded</p>
-              </div>
-              <div>
-                <p className="text-sm uppercase tracking-wide text-gray-400">
-                  Response time
-                </p>
-                <p className="font-semibold">Same week kickoff</p>
-              </div>
-              <div>
-                <p className="text-sm uppercase tracking-wide text-gray-400">
-                  Collaboration
-                </p>
-                <p className="font-semibold">Slack + Figma + Notion</p>
-              </div>
-              <div>
-                <p className="text-sm uppercase tracking-wide text-gray-400">
-                  Availability
-                </p>
-                <p className="font-semibold">2 open partner slots</p>
-              </div>
-            </div>
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }

@@ -35,12 +35,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
         <div className="p-6">
           <div className="flex items-start justify-between mb-2">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 className="text-xl font-semibold text-gray-900">
               {project.title}
             </h3>
-            <span className="text-sm text-gray-500 dark:text-gray-400">{project.year}</span>
+            <span className="text-sm text-gray-500">{project.year}</span>
           </div>
-          <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">{project.summary}</p>
+          <p className="text-gray-600 mb-4 text-sm">{project.summary}</p>
           <div className="flex flex-wrap gap-2">
             {project.services.map((service) => (
               <Tag key={service}>{service}</Tag>

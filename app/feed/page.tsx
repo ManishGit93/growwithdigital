@@ -8,18 +8,18 @@ import { feedPosts } from '@/data/feed';
 
 export default function FeedPage() {
   return (
-    <SectionShell className="py-20 bg-white dark:bg-gray-900" maxWidth="6xl">
+    <SectionShell className="py-20 bg-white" maxWidth="6xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
         <div className="text-center mb-12">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 dark:text-gray-400 mb-3">
+          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-3">
             Studio journal
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">Studio Feed</h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">Studio Feed</h1>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             Thoughts, insights, and updates from our team on design, development, and building digital products.
           </p>
         </div>
