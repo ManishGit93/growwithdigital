@@ -204,7 +204,7 @@ export default function Footer() {
             <span>Mailchimp Partner</span>
           </div>
           <p className="text-[11px] text-center text-gray-500 mt-4">
-            © 2006 - {new Date().getFullYear()} Built by{" "}
+            ©{new Date().getFullYear()} Built by{" "}
             <span className="font-semibold">GrowWithDigital</span>. All rights
             reserved.{" "}
             <a

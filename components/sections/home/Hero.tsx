@@ -21,7 +21,7 @@ export default function Hero() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gray-600"
           >
-            GrowWithDigital / India · Remote worldwide
+            GrowWithDigital / India / Worldwide
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
